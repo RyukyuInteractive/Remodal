@@ -8,17 +8,17 @@ Cách sử dụng REMODAL + mCustomScrollbar.
           });
         </script>
 
-Trong thẻ <a> ta dùng data-remodal-target=“modal" thay cho href=“#”
+Trong thẻ < a > ta dùng data-remodal-target="modal" thay cho href=“#”
 
 2. Remodal với custom modifier
 
-	<script>
-		$('[data-remodal-id=modal]').remodal({
-			modifier: 'name-class',
-		});
-	</script>
+        <script>
+                $('[data-remodal-id=modal]').remodal({
+                        modifier: 'name-class',
+                });
+        </script>
 
-‘name-class’ là tên class bạn muốn định nghĩa lại.
+"name-class" là tên class bạn muốn định nghĩa lại.
 
 3. Remodal và mCustomeScrollbar.
 
