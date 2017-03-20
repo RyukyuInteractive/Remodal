@@ -33,11 +33,13 @@ Trong thẻ < a > ta dùng data-remodal-target="modal" thay cho href=“#”
 Tham khảo các theme khác http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html
 
 #### 4. Cài đặt khoá màn hình không cho scroll document(đặc biệt trên IOS).
-Không cho touchMove trên IOS
+Không cho touchMove trên Smartphone (chỉ dành cho IOS)
 
 	$(document).on('opening', '.remodal', function () {
 		document.ontouchmove = function(e){ e.preventDefault(); }
 	});
+
+Trả lại sự kiện touchmove khi đóng remodal(chỉ dành cho IOS).
 
 	$(document).on('closing', '.remodal', function (e) {
 		document.ontouchmove = function(e){ return true; }
