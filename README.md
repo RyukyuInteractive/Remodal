@@ -27,6 +27,8 @@ Trong thẻ < a > ta dùng data-remodal-target="modal" thay cho href=“#”
 			theme:"minimal",
 		});
 	});
+	
+".remodal-content" là tên class cha, là vùng chứa nội dung scroll. 	
 
 Tham khảo các theme khác http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html
 
