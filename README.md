@@ -10,17 +10,17 @@ Cách sử dụng REMODAL + mCustomScrollbar.
 
 Trong thẻ <a> ta dùng data-remodal-target=“modal" thay cho href=“#”
 
-Remodal với custom modifier
-<script>
-	$('[data-remodal-id=modal]').remodal({
-		modifier: 'name-class',
-	});
-</script>
+2. Remodal với custom modifier
+	<script>
+		$('[data-remodal-id=modal]').remodal({
+			modifier: 'name-class',
+		});
+	</script>
 
 ‘name-class’ là tên class bạn muốn định nghĩa lại.
 
-Remodal và mCustomeScrollbar.
-$(window).load(function(){
+3. Remodal và mCustomeScrollbar.
+	$(window).load(function(){
 		$(".remodal-content").mCustomScrollbar({
 			theme:"minimal",
 		});
@@ -28,7 +28,7 @@ $(window).load(function(){
 
 Tham khảo các theme khác http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html
 
-Cài đặt khoá màn hình không cho scroll document(đặc biệt trên IOS).
+4. Cài đặt khoá màn hình không cho scroll document(đặc biệt trên IOS).
 Không cho touchMove trên IOS
 	$(document).on('opening', '.remodal', function () {
 		document.ontouchmove = function(e){ e.preventDefault(); }
